@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+/* Todo: Update & Fix (Exclude duplicates?) */
+
 vector<int> get_multiples_of_number(int number, int limit = 10) {
     vector<int> multiples = {};
     int multiplier = 1;
