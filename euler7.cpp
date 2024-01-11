@@ -22,8 +22,11 @@ int main() {
                 dividend_limit--;
             } else {   
                 bool truly_prime = true;
-                for (const int& dividend : dividends)
+                for (const int& dividend : dividends) {
                     truly_prime = (truly_prime && (i % dividend != 0));
+                    if (!truly_prime)
+                        break;
+                }
                 if (!truly_prime)
                     continue;
                 else {
